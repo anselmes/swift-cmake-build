@@ -4,7 +4,7 @@
 // import Foundation
 // #endif
 
-@_exported import Example
+@_exported import ExampleC
 
 // A simple structure representing the ExampleSys module
 public struct ExampleStruct {

@@ -6,14 +6,14 @@ let package = Package(
   name: "ExampleSys",
   platforms: [.macOS(.v14)],
   products: [
-    .library(name: "Example", type: .static, targets: ["Example"]),
+    .library(name: "ExampleC", type: .static, targets: ["ExampleC"]),
     .library(name: "ExampleSys", type: .static, targets: ["ExampleSys"]),
   ],
   targets: [
-    .target(name: "Example"),
+    .target(name: "ExampleC"),
     .target(
       name: "ExampleSys",
-      dependencies: ["Example"],
+      dependencies: ["ExampleC"],
     ),
   ]
 )
