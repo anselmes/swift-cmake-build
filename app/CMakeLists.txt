@@ -1,2 +1,2 @@
-project("exampleapp")
+project("example")
 swift_build_app()

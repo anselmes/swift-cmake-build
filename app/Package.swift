@@ -3,18 +3,18 @@
 import PackageDescription
 
 let package = Package(
-  name: "ExampleApp",
+  name: "Example",
   platforms: [.macOS(.v14)],
   dependencies: [
     .package(name: "ExampleSys", path: "../lib/ExampleSys"),
-    .package(name: "ExampleSwift", path: "../lib/Example"),
+    .package(name: "ExampleSwift", path: "../lib/ExampleSwift"),
   ],
   targets: [
     .executableTarget(
-      name: "ExampleApp",
+      name: "Example",
       dependencies: [
-        "ExampleSwift",
         "ExampleSys",
+        "ExampleSwift",
       ],
     ),
   ]

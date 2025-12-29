@@ -1,5 +1,5 @@
-import ExampleSwift
 import ExampleSys
+import ExampleSwift
 
 // Call the idiomatic Swift function
 run()
