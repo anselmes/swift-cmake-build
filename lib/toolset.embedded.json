@@ -2,12 +2,13 @@
   "schemaVersion": "1.0",
   "swiftCompiler": {
     "extraCLIOptions": [
-      "-assert-config", "Debug",
       "-enable-experimental-feature", "CImplementation",
+      "-enable-experimental-feature", "Embedded",
       "-enable-experimental-feature", "Extern",
-      "-Osize",
-      "-whole-module-optimization", 
-      "-Xfrontend", "-enable-single-module-llvm-emission",
+      "-enable-upcoming-feature", "StrictConcurrency",
+      "-parse-as-library",
+      "-strict-memory-safety",
+      "-whole-module-optimization",
       "-Xfrontend", "-function-sections"
     ]
   },
@@ -15,14 +16,6 @@
     "extraCLIOptions": [
       "-ffunction-sections",
       "-Wall"
-    ]
-  },
-  "linker": {
-    "extraCLIOptions": [
-      "-lc",
-      "-lm",
-      "-t",
-      "-v"
     ]
   }
 }

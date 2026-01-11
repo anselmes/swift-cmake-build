@@ -127,4 +127,4 @@ build/
 *.mov
 *toolset.json
 
-!env.example
+!example.env
