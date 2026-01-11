@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0",
+  "swiftCompiler": {
+    "extraCLIOptions": [
+      "-enable-experimental-feature", "CImplementation",
+      "-enable-experimental-feature", "Extern",
+      "-enable-upcoming-feature", "StrictConcurrency",
+      "-parse-as-library",
+      "-strict-memory-safety",
+      "-Xfrontend", "-function-sections"
+    ]
+  },
+  "cCompiler": {
+    "extraCLIOptions": [
+      "-ffunction-sections",
+      "-Wall"
+    ]
+  }
+}
